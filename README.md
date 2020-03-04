@@ -15,18 +15,14 @@
 
 # Baseline 3D Pose Estimation in PyTorch
 
-This repo is used as my bachelor thesis host in Gunadarma University
-> Based on: * Paper :         * https://arxiv.org/abs/1705.03098
-        
-    * Repos : 
-        * https://github.com/una-dinosauria/3d-pose-baseline
-        * https://github.com/weigq/3d_pose_baseline_pytorch
+This repo is used as my bachelor thesis host at Gunadarma University
+> Paper : [arxiv](https://arxiv.org/abs/1705.03098).> Repos : [original](https://github.com/una-dinosauria/3d-pose-baseline) | [pytorch](https://github.com/weigq/3d_pose_baseline_pytorch).
 
-This file will become your README and also the index of your documentation.
+This repo is only for educational purpose.
 
 ## Install
 
-`pip install your_project_name`
+`pip install baseline_3d_pose`
 
 ## How to use
 
@@ -51,3 +47,5 @@ Fill me in please! Don't forget code examples:
 </div>
 
 </div>
+
+in progress...
