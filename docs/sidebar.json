@@ -1,6 +1,7 @@
 {
   "baseline_3d_pose": {
     "Overview": "/",
-    "data.py": "/data"
+    "utils.py": "/utils",
+    "viz.py": "/viz"
   }
 }
