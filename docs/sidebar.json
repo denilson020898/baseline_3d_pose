@@ -1,6 +1,6 @@
 {
   "baseline_3d_pose": {
     "Overview": "/",
-    "module name here": "/core"
+    "data.py": "/data"
   }
 }

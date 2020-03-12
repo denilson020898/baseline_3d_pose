@@ -10,8 +10,8 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: module name here
-      url: /core
+      title: data.py
+      url: /data
     output: web
     title: baseline_3d_pose
   output: web

@@ -2,9 +2,14 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"TRAIN_SUBJECTS": "00_data.ipynb",
+         "TEST_SUBJECTS": "00_data.ipynb",
+         "H36M_NAMES": "00_data.ipynb",
+         "get_actions": "00_data.ipynb",
+         "normalize": "00_data.ipynb",
+         "unnormalize": "00_data.ipynb"}
 
-modules = []
+modules = ["data.py"]
 
 doc_url = "https://denilson020898.github.io/baseline_3d_pose/"
 
