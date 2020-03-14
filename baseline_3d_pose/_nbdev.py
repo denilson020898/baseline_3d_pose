@@ -8,6 +8,7 @@ index = {"TRAIN_SUBJECTS": "00_utils.ipynb",
          "N_CAMERAS": "00_utils.ipynb",
          "N_JOINTS": "00_utils.ipynb",
          "PLOT_RADIUS": "00_utils.ipynb",
+         "data_path": "00_utils.ipynb",
          "get_actions": "00_utils.ipynb",
          "normalize_data": "00_utils.ipynb",
          "unnormalize_data": "00_utils.ipynb",
@@ -18,9 +19,11 @@ index = {"TRAIN_SUBJECTS": "00_utils.ipynb",
          "camera_to_world_frame": "00_utils.ipynb",
          "cam_to_world_centered": "00_utils.ipynb",
          "show_2d_pose": "00_utils.ipynb",
-         "show_3d_pose": "00_utils.ipynb"}
+         "show_3d_pose": "00_utils.ipynb",
+         "Human36Dataset": "02_dataset.ipynb"}
 
-modules = ["utils.py"]
+modules = ["utils.py",
+           "dataset.py"]
 
 doc_url = "https://denilson020898.github.io/baseline_3d_pose/"
 

@@ -15,6 +15,9 @@ entries:
     - output: web,pdf
       title: viz.py
       url: /viz
+    - output: web,pdf
+      title: dataset.py
+      url: /dataset
     output: web
     title: baseline_3d_pose
   output: web

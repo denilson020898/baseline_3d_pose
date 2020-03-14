@@ -28,11 +28,46 @@ summary: "utilities + helpers"
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Constants">Constants<a class="anchor-link" href="#Constants">&#182;</a></h2>
+<h2 id="constants">constants<a class="anchor-link" href="#constants">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">TRAIN_SUBJECTS</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="n">TEST_SUBJECTS</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+
+<span class="n">H36M_NAMES</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">32</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;Hip&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;RHip&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;RKnee&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;RFoot&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;LHip&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;LKnee&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>  <span class="o">=</span> <span class="s1">&#39;LFoot&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">12</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Spine&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">13</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Thorax&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">14</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Neck/Nose&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">15</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Head&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">17</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;LShoulder&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">18</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;LElbow&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">19</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;LWrist&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">25</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;RShoulder&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">26</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;RElbow&#39;</span>
+<span class="n">H36M_NAMES</span><span class="p">[</span><span class="mi">27</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;RWrist&#39;</span>
+
+<span class="n">N_CAMERAS</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">N_JOINTS</span> <span class="o">=</span> <span class="mi">32</span>
+
+<span class="n">PLOT_RADIUS</span> <span class="o">=</span> <span class="mi">300</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
@@ -91,7 +126,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_actions" class="doc_header"><code>get_actions</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L41" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_actions</code>(<strong><code>action</code></strong>)</p>
+<h4 id="get_actions" class="doc_header"><code>get_actions</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_actions</code>(<strong><code>action</code></strong>:<code>str</code>)</p>
 </blockquote>
 
 </div>
@@ -135,7 +170,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="normalize_data" class="doc_header"><code>normalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L68" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_data</code>(<strong><code>unnormalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
+<h4 id="normalize_data" class="doc_header"><code>normalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L73" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_data</code>(<strong><code>unnormalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -158,7 +193,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="unnormalize_data" class="doc_header"><code>unnormalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L78" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unnormalize_data</code>(<strong><code>normalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_ignore</code></strong>)</p>
+<h4 id="unnormalize_data" class="doc_header"><code>unnormalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L83" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unnormalize_data</code>(<strong><code>normalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_ignore</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -181,7 +216,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="normalize_kp" class="doc_header"><code>normalize_kp</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L93" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_kp</code>(<strong><code>kp</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
+<h4 id="normalize_kp" class="doc_header"><code>normalize_kp</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_kp</code>(<strong><code>kp</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -204,7 +239,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_kp_from_json" class="doc_header"><code>get_kp_from_json</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_kp_from_json</code>(<strong><code>fname</code></strong>)</p>
+<h4 id="get_kp_from_json" class="doc_header"><code>get_kp_from_json</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L104" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_kp_from_json</code>(<strong><code>fname</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -227,7 +262,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="coco_to_skel" class="doc_header"><code>coco_to_skel</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L106" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>coco_to_skel</code>(<strong><code>s</code></strong>)</p>
+<h4 id="coco_to_skel" class="doc_header"><code>coco_to_skel</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>coco_to_skel</code>(<strong><code>s</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -256,7 +291,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_cam_rt" class="doc_header"><code>get_cam_rt</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L130" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cam_rt</code>(<strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
+<h4 id="get_cam_rt" class="doc_header"><code>get_cam_rt</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L135" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cam_rt</code>(<strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -279,7 +314,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="camera_to_world_frame" class="doc_header"><code>camera_to_world_frame</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L141" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>camera_to_world_frame</code>(<strong><code>P</code></strong>, <strong><code>R</code></strong>, <strong><code>T</code></strong>)</p>
+<h4 id="camera_to_world_frame" class="doc_header"><code>camera_to_world_frame</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L146" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>camera_to_world_frame</code>(<strong><code>P</code></strong>, <strong><code>R</code></strong>, <strong><code>T</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -302,7 +337,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="cam_to_world_centered" class="doc_header"><code>cam_to_world_centered</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L146" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>cam_to_world_centered</code>(<strong><code>data</code></strong>, <strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
+<h4 id="cam_to_world_centered" class="doc_header"><code>cam_to_world_centered</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L151" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>cam_to_world_centered</code>(<strong><code>data</code></strong>, <strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -331,7 +366,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="show_2d_pose" class="doc_header"><code>show_2d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L154" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_2d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
+<h4 id="show_2d_pose" class="doc_header"><code>show_2d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L159" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_2d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -354,7 +389,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="show_3d_pose" class="doc_header"><code>show_3d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L168" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_3d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
+<h4 id="show_3d_pose" class="doc_header"><code>show_3d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L173" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_3d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
 </blockquote>
 
 </div>
