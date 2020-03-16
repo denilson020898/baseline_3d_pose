@@ -18,6 +18,12 @@ entries:
     - output: web,pdf
       title: dataset.py
       url: /dataset
+    - output: web,pdf
+      title: Title
+      url: /model
+    - output: web,pdf
+      title: train.py
+      url: /train
     output: web
     title: baseline_3d_pose
   output: web

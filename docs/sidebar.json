@@ -3,6 +3,8 @@
     "Overview": "/",
     "utils.py": "/utils",
     "viz.py": "/viz",
-    "dataset.py": "/dataset"
+    "dataset.py": "/dataset",
+    "Title": "/model",
+    "train.py": "/train"
   }
 }

@@ -20,10 +20,15 @@ index = {"TRAIN_SUBJECTS": "00_utils.ipynb",
          "cam_to_world_centered": "00_utils.ipynb",
          "show_2d_pose": "00_utils.ipynb",
          "show_3d_pose": "00_utils.ipynb",
-         "Human36Dataset": "02_dataset.ipynb"}
+         "Human36Dataset": "02_dataset.ipynb",
+         "init_kaiming": "03_model.ipynb",
+         "ResLinear": "03_model.ipynb",
+         "Model": "03_model.ipynb"}
 
 modules = ["utils.py",
-           "dataset.py"]
+           "dataset.py",
+           "model.py",
+           "train.py"]
 
 doc_url = "https://denilson020898.github.io/baseline_3d_pose/"
 
