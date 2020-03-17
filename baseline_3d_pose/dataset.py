@@ -25,11 +25,12 @@ class Human36Dataset(Dataset):
 
         for key in self.data_2d.keys():
             assert self.data_2d[key].shape[0] == self.data_3d[key].shape[0]
-            num_file = self.data_2d[key].shape[0]
-            for i in range(num_file):
-                self.inp_list.append(self.data_2d[key][i])
-                self.out_list.append(self.data_3d[key][i])
-                self.key_list.append(key)
+            if key[1] in self.actions:
+                num_file = self.data_2d[key].shape[0]
+                for i in range(num_file):
+                    self.inp_list.append(self.data_2d[key][i])
+                    self.out_list.append(self.data_3d[key][i])
+                    self.key_list.append(key)
 
     def __getitem__(self, idx):
         inp = torch.from_numpy(self.inp_list[idx]).float()

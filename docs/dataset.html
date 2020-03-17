@@ -80,8 +80,51 @@ of :class:<code>~torch.utils.data.DataLoader</code>.</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_h36</span> <span class="o">=</span> <span class="n">Human36Dataset</span><span class="p">(</span><span class="n">get_actions</span><span class="p">(</span><span class="s1">&#39;All&#39;</span><span class="p">),</span> <span class="n">data_path</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">test_h36</span> <span class="o">=</span> <span class="n">Human36Dataset</span><span class="p">(</span><span class="n">get_actions</span><span class="p">(</span><span class="s1">&#39;All&#39;</span><span class="p">),</span> <span class="n">data_path</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_actions</span><span class="p">(</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Directions&#39;,
+ &#39;Discussion&#39;,
+ &#39;Eating&#39;,
+ &#39;Greeting&#39;,
+ &#39;Phoning&#39;,
+ &#39;Photo&#39;,
+ &#39;Posing&#39;,
+ &#39;Purchases&#39;,
+ &#39;Sitting&#39;,
+ &#39;SittingDown&#39;,
+ &#39;Smoking&#39;,
+ &#39;Waiting&#39;,
+ &#39;WalkDog&#39;,
+ &#39;Walking&#39;,
+ &#39;WalkTogether&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_h36</span> <span class="o">=</span> <span class="n">Human36Dataset</span><span class="p">(</span><span class="n">get_actions</span><span class="p">(</span><span class="s1">&#39;Greeting&#39;</span><span class="p">),</span> <span class="n">data_path</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">test_h36</span>  <span class="o">=</span> <span class="n">Human36Dataset</span><span class="p">(</span><span class="n">get_actions</span><span class="p">(</span><span class="s1">&#39;Greeting&#39;</span><span class="p">),</span> <span class="n">data_path</span><span class="p">,</span> <span class="n">is_train</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -109,7 +152,7 @@ of :class:<code>~torch.utils.data.DataLoader</code>.</p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(1559752, 550644)</pre>
+<pre>(72436, 30644)</pre>
 </div>
 
 </div>

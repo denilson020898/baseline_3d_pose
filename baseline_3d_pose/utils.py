@@ -43,7 +43,7 @@ data_path = Path('data')
 data_path.ls()
 
 # Cell
-def get_actions(action:str):
+def get_actions(action):
     """
     """
     actions = ['Directions',
