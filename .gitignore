@@ -2,6 +2,7 @@
 data/
 imgs/
 json/
+model/
 
 *.bak
 .gitattributes
