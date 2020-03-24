@@ -8,7 +8,7 @@ __all__ = ['TRAIN_SUBJECTS', 'TEST_SUBJECTS', 'H36M_NAMES', 'N_CAMERAS', 'N_JOIN
 import json
 import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
-from fastai.vision import *
+from pathlib import Path
 
 # Cell
 TRAIN_SUBJECTS = [1, 5, 6, 7, 8]
@@ -37,6 +37,9 @@ N_CAMERAS = 4
 N_JOINTS = 32
 
 PLOT_RADIUS = 300
+
+# Cell
+Path.ls = lambda x: list(x.iterdir())
 
 # Cell
 data_path = Path('data')
@@ -164,7 +167,7 @@ def show_2d_pose(skel, ax, lcolor='#094e94', rcolor='#940909'):
     for i in range(len(start)):
         x, y = [np.array( [kps[start[i], j], kps[end[i], j]] ) for j in range(2)]
         ax.plot(x, y, lw=2, c=lcolor if left_right[i] else rcolor)
-        ax.scatter(x, y, c=lcolor if left_right[i] else rcolor)
+#         ax.scatter(x, y, c=lcolor if left_right[i] else rcolor)
     xroot, yroot = kps[0,0], kps[0,1]
     ax.set_xlim(-PLOT_RADIUS+xroot, PLOT_RADIUS+xroot)
     ax.set_ylim(-PLOT_RADIUS+yroot, PLOT_RADIUS+yroot)

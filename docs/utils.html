@@ -71,6 +71,9 @@ summary: "utilities + helpers"
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="inner_cell">
@@ -91,15 +94,15 @@ summary: "utilities + helpers"
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[PosixPath(&#39;data/train_2d.pth.tar&#39;),
- PosixPath(&#39;data/stat_2d.pth.tar&#39;),
- PosixPath(&#39;data/train_3d.pth.tar&#39;),
- PosixPath(&#39;data/test_2d.pth.tar&#39;),
- PosixPath(&#39;data/test_2d_ft.pth.tar&#39;),
- PosixPath(&#39;data/train_2d_ft.pth.tar&#39;),
- PosixPath(&#39;data/test_3d.pth.tar&#39;),
- PosixPath(&#39;data/stat_3d.pth.tar&#39;),
- PosixPath(&#39;data/rcams.pth.tar&#39;)]</pre>
+<pre>[PosixPath(&#39;data/test_2d.pt&#39;),
+ PosixPath(&#39;data/stat_2d.pt&#39;),
+ PosixPath(&#39;data/train_3d.pt&#39;),
+ PosixPath(&#39;data/stat_3d.pt&#39;),
+ PosixPath(&#39;data/test_2d_ft.pt&#39;),
+ PosixPath(&#39;data/train_2d_ft.pt&#39;),
+ PosixPath(&#39;data/test_3d.pt&#39;),
+ PosixPath(&#39;data/rcams.pt&#39;),
+ PosixPath(&#39;data/train_2d.pt&#39;)]</pre>
 </div>
 
 </div>
@@ -126,7 +129,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_actions" class="doc_header"><code>get_actions</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_actions</code>(<strong><code>action</code></strong>)</p>
+<h4 id="get_actions" class="doc_header"><code>get_actions</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L49" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_actions</code>(<strong><code>action</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -170,7 +173,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="normalize_data" class="doc_header"><code>normalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L73" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_data</code>(<strong><code>unnormalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
+<h4 id="normalize_data" class="doc_header"><code>normalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_data</code>(<strong><code>unnormalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -193,7 +196,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="unnormalize_data" class="doc_header"><code>unnormalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L83" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unnormalize_data</code>(<strong><code>normalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_ignore</code></strong>)</p>
+<h4 id="unnormalize_data" class="doc_header"><code>unnormalize_data</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L86" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>unnormalize_data</code>(<strong><code>normalized</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_ignore</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -216,7 +219,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="normalize_kp" class="doc_header"><code>normalize_kp</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_kp</code>(<strong><code>kp</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
+<h4 id="normalize_kp" class="doc_header"><code>normalize_kp</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>normalize_kp</code>(<strong><code>kp</code></strong>, <strong><code>mean</code></strong>, <strong><code>std</code></strong>, <strong><code>dim_use</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -239,7 +242,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_kp_from_json" class="doc_header"><code>get_kp_from_json</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L104" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_kp_from_json</code>(<strong><code>fname</code></strong>)</p>
+<h4 id="get_kp_from_json" class="doc_header"><code>get_kp_from_json</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L107" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_kp_from_json</code>(<strong><code>fname</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -262,7 +265,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="coco_to_skel" class="doc_header"><code>coco_to_skel</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L111" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>coco_to_skel</code>(<strong><code>s</code></strong>)</p>
+<h4 id="coco_to_skel" class="doc_header"><code>coco_to_skel</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L114" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>coco_to_skel</code>(<strong><code>s</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -291,7 +294,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_cam_rt" class="doc_header"><code>get_cam_rt</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L135" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cam_rt</code>(<strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
+<h4 id="get_cam_rt" class="doc_header"><code>get_cam_rt</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L138" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_cam_rt</code>(<strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -314,7 +317,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="camera_to_world_frame" class="doc_header"><code>camera_to_world_frame</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L146" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>camera_to_world_frame</code>(<strong><code>P</code></strong>, <strong><code>R</code></strong>, <strong><code>T</code></strong>)</p>
+<h4 id="camera_to_world_frame" class="doc_header"><code>camera_to_world_frame</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L149" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>camera_to_world_frame</code>(<strong><code>P</code></strong>, <strong><code>R</code></strong>, <strong><code>T</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -337,7 +340,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="cam_to_world_centered" class="doc_header"><code>cam_to_world_centered</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L151" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>cam_to_world_centered</code>(<strong><code>data</code></strong>, <strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
+<h4 id="cam_to_world_centered" class="doc_header"><code>cam_to_world_centered</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L154" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>cam_to_world_centered</code>(<strong><code>data</code></strong>, <strong><code>key</code></strong>, <strong><code>rcams</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -366,7 +369,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="show_2d_pose" class="doc_header"><code>show_2d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L159" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_2d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
+<h4 id="show_2d_pose" class="doc_header"><code>show_2d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L162" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_2d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -389,7 +392,7 @@ summary: "utilities + helpers"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="show_3d_pose" class="doc_header"><code>show_3d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L173" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_3d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
+<h4 id="show_3d_pose" class="doc_header"><code>show_3d_pose</code><a href="https://github.com/denilson020898/baseline_3d_pose/tree/master/baseline_3d_pose/utils.py#L176" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>show_3d_pose</code>(<strong><code>skel</code></strong>, <strong><code>ax</code></strong>, <strong><code>lcolor</code></strong>=<em><code>'#094e94'</code></em>, <strong><code>rcolor</code></strong>=<em><code>'#940909'</code></em>)</p>
 </blockquote>
 
 </div>
